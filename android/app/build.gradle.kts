@@ -37,7 +37,7 @@ android {
         versionName = flutter.versionName
         manifestPlaceholders["admobAppId"] = providers.gradleProperty("ADMOB_APP_ID")
             .orElse(providers.environmentVariable("ADMOB_APP_ID"))
-            .orElse("ca-app-pub-3940256099942544~3347511713")
+            .orElse("ca-app-pub-3569416988400580~2299372578")
             .get()
     }
 

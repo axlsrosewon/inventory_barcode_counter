@@ -7,7 +7,10 @@ Local-first barcode inventory counting app for Android.
 - App name: `재고 실사 바코드 카운터`
 - English listing name: `Inventory Barcode Counter`
 - Package: `com.nst.inventorybarcodecounter`
-- Version: `1.0.0+1`
+- Version: `1.0.2+3`
+- AdMob app ID: `ca-app-pub-3569416988400580~2299372578`
+- AdMob banner unit ID: `ca-app-pub-3569416988400580/2112308347`
+- AdMob interstitial unit ID: `ca-app-pub-3569416988400580/4329659601`
 - Contact website: `http://nst21c.com`
 - Privacy policy: `https://axlsrosewon.github.io/inventory-barcode-counter-privacy/`
 - Release AAB: `build/app/outputs/bundle/release/app-release.aab`
@@ -38,14 +41,5 @@ flutter build appbundle --release
 
 ## Production Notes
 
-- The current release AAB was built with Google test ad IDs because AdMob UI automation was unavailable in this session.
-- For the production AAB, set real IDs before building:
-
-```powershell
-$env:ADMOB_APP_ID='ca-app-pub-...~...'
-flutter build appbundle --release `
-  --dart-define=ADMOB_BANNER_AD_UNIT_ID='ca-app-pub-.../...' `
-  --dart-define=ADMOB_INTERSTITIAL_AD_UNIT_ID='ca-app-pub-.../...'
-```
-
+- The 2026-08-16 update build uses the real AdMob app, banner, and interstitial IDs by default.
 - Firebase Analytics requires a Firebase Android app config for `com.nst.inventorybarcodecounter`. Add `android/app/google-services.json` and the matching FlutterFire options when Firebase Console access is available.
